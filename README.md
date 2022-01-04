@@ -7,7 +7,7 @@ Here we have just an implementation test with JScript and CSS
 
 <table width:100%>
   <tr>
-    <td><img src="./_/Javascript-BaseSideScroll_img01"></td>
+    <td><img src="./_/Javascript-BaseSideScroll_img01.png "></td>
   </tr>
 </table>
 
