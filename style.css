@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    overflow-y: hidden;
+}
+
+.night{
+    width: 70vw;
+    height:  80vh;
+    /* border: 1px solid black; */
+    margin: 5rem auto;
+    background: url('./assets/Img_1.png');
+    background-size: cover;
+    position: relative;
+    box-shadow: 1px 2px 20px rgb(0,0,0,4);
+    overflow-x: hidden;
+
+    /* animation: bgParalax 2s linear infinite; */
+}
+
+.surface {
+    width: 500%;
+    height: 140px;
+    background: url(./assets/Img_02.png);
+    display: block;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+}
+
+.moveRight{
+    animation: moveRight 6s linear infinite;
+}
+
+.car{
+    position: absolute;
+    bottom: 8%;
+    left: 5%;
+}
+
+.car2{
+    position: absolute;
+    bottom: 8%;
+    left: 40%;
+}
+
+.suspension{
+    animation: suspension 1s linear infinite;
+}
+
+.suspension2{
+    animation: suspension2 1s linear infinite;
+}
+
+
+@keyframes bgParalax{
+    100%{
+        transform: translateX(-1px);
+    }
+    50%{
+        transform: translateX(2px);
+    }
+    0%{
+        transform: translateX(-1px);
+    }    
+}
+
+@keyframes moveRight{
+    100%{transform:translateX(-2950px)}
+}
+
+@keyframes suspension{
+    100%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(2px);
+    }
+    0%{
+        transform: translateY(-1px);
+    }
+}
+
+@keyframes suspension2{
+    100%{
+        transform: translateY(2px);
+    }
+    50%{
+        transform: translateY(-2px);
+    }
+    0%{
+        transform: translateY(1px);
+    }
+}
+
